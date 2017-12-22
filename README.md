@@ -12,6 +12,8 @@ To run Main.hs to see the examples, follow these steps:
 1) Install the latest version of stack (Haskell's package manager)
 using this link: https://docs.haskellstack.org/en/stable/install_and_upgrade/
 
-2) Clone this repository, and change directories to <your path>/logging
+2) Clone this repository, and change directories to \<your path\>/logging
 
-3) Run "stack exec", and you will see the output of Main.
+3) Run stack build, to build your executable.
+
+4) Run "stack exec -- logging", and you will see the output of Main.
