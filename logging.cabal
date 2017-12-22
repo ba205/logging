@@ -16,6 +16,8 @@ extra-source-files:  README.md
 executable logging
   hs-source-dirs:      src
   main-is:             Main.hs
+  exposed-modules:     Logger, LogReader
+  other-modules:       Logger, LogReader
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
 
