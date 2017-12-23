@@ -12,12 +12,14 @@ import Data.Time.Clock
 import Data.Time.Calendar
 import GHC.Conc
 
+-- Datatype to store information about logging messages.
 data LogMessage = LogMessage { message    :: Text
                              , priority   :: Int
                              , datetime   :: Text
                              , threadName :: Text
                              } deriving Show
 
+-- Given a message and its priority, create a new Log Message.
 createLogMessage :: Text -> Int -> IO LogMessage
 createLogMessage message priority =
   do
@@ -27,6 +29,8 @@ createLogMessage message priority =
     let threadName' = T.pack $ show threadName
     return $ LogMessage message priority datetime' threadName'
 
+-- | Given the current logger, read the top priority message
+--   if it exists, otherwise throw an exception.
 logReader :: Logger -> IO (Logger, LogMessage) 
 logReader (Logger masterLog queueBound defaultPriority) =
   do
