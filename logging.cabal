@@ -21,6 +21,7 @@ executable logging
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
                      , PSQueue
+                     , pqueue
                      , text
                      , transformers
 
@@ -29,6 +30,7 @@ library
   exposed-modules:     Logger, LogReader
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
+                     , pqueue
                      , PSQueue
                      , text
                      , transformers

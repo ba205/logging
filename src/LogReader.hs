@@ -3,8 +3,8 @@
 module LogReader where
 
 import Logger
-import Data.PSQueue (PSQ)
-import qualified Data.PSQueue as P
+import Data.PQueue.Max (MaxQueue)
+import qualified Data.PQueue.Max as PM
 import Data.Text (Text)
 import qualified Data.Text as T
 import Control.Monad.Trans.Except
