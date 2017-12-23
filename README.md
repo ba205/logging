@@ -1,6 +1,6 @@
 # logging
 
-This is a simple logging api that uses the PSQueue library as 
+This is a simple logging api that uses the PQueue.Max library as 
 its priority queue.
 
 Examples of how to use this library are in src/Main.hs. As long
